@@ -344,7 +344,7 @@ h1 {
   padding: 1rem;
   outline: 0;
   border: 1px solid white;
-  font-size: 0.5rem;
+  font-size: 1rem;
   color: var(--color-body);
 }
 
