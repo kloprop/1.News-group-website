@@ -1,8 +1,8 @@
 :root {
   --color-primary: #5dbe7c;
-  --color-secondary: #468080;
+  --color-secondary: #107f88;
   --color-tertiary: #698474;
-  --color-nav: #576331;
+  --color-nav: #3b4419;
   --color-contrast: #ffe081;
   --color-contrast2: #4c4637;
   --color-body: #fcf8f3;
@@ -253,7 +253,7 @@ header {
   margin-bottom: 10rem;
 }
 .card a {
-  color: var(--color-body);
+  color: #4d3b22;
 }
 .card a:hover {
   color: var(--color-contrast);
