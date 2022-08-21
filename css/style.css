@@ -318,7 +318,8 @@ header {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-top: 0;
 }
 
 .feeback__container {
@@ -333,19 +334,20 @@ h1 {
   align-items: center;
   background-color: var(--color-primary);
   flex-wrap: wrap;
-  max-width: 50vw;
-  padding: 2rem 5rem;
+  padding: 1rem;
+  max-width: 90vw;
 }
 .feeback__textarea {
-  margin: 2rem 0;
+  margin: 0.5rem 0;
   width: 100%;
   background-color: var(--color-primary);
   padding: 1rem;
   outline: 0;
   border: 1px solid white;
-  font-size: 2rem;
+  font-size: 0.5rem;
   color: var(--color-body);
 }
+
 .block--btn {
   display: flex;
   justify-content: space-between;
@@ -353,8 +355,8 @@ h1 {
 }
 .btn {
   outline: 0;
-  padding: 1rem 2.5rem;
-  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
 }
 
 .btn--primary {
@@ -381,4 +383,27 @@ h1 {
 }
 .btn--sharp:hover {
   background-color: #dec270;
+}
+@media screen and (min-width: 768px) {
+  .feeback__textarea {
+    margin: 2rem 0;
+
+    font-size: 2rem;
+  }
+  .feeback {
+    max-width: 80vw;
+    padding: 2rem 5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .feeback {
+    max-width: 50vw;
+  }
 }
