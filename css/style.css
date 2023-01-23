@@ -72,6 +72,7 @@ header {
   margin: 0;
   display: flex;
   align-items: center;
+  color: var(--color-contrast);
   transition: 0.3s;
 }
 .nav__word:hover {
@@ -96,11 +97,14 @@ header {
 .nav__item {
   border-bottom: 1px solid var(--color-tertiary);
   padding: 1rem;
+  color: var(--color-nav);
 }
+.nav__item,
 .nav__item a,
 .card a {
   transition: color 0.3s;
 }
+.nav__item:hover,
 .nav__item a:hover {
   color: var(--color-contrast);
 }
@@ -108,6 +112,9 @@ header {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+.nav__item {
+  cursor: pointer;
 }
 .collapsible__content {
   /*Before*/
@@ -322,12 +329,6 @@ h1 {
   margin-top: 0;
 }
 
-.feeback__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 .feeback {
   display: flex;
   justify-content: center;
@@ -335,7 +336,21 @@ h1 {
   background-color: var(--color-primary);
   flex-wrap: wrap;
   padding: 1rem;
-  max-width: 90vw;
+  width: 90vw;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #5a5a5a;
+}
+
+.feeback header p {
+  margin-top: 0;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+.feeback header p:hover {
+  opacity: 0.5;
 }
 .feeback__textarea {
   margin: 0.5rem 0;
@@ -375,6 +390,10 @@ h1 {
   border: 1px solid var(--color-contrast);
   box-shadow: 0 0 0 1px lightgray;
 }
+.feeback .btn {
+  justify-self: center;
+  align-self: center;
+}
 .btn:hover {
   cursor: pointer;
 }
@@ -391,7 +410,7 @@ h1 {
     font-size: 2rem;
   }
   .feeback {
-    max-width: 80vw;
+    width: 80vw;
     padding: 2rem 5rem;
   }
   h1 {
@@ -406,4 +425,34 @@ h1 {
   .feeback {
     max-width: 50vw;
   }
+}
+/* Window*/
+.blur {
+  filter: brightness(0.7);
+}
+.window {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.new__div {
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.open {
+  display: flex;
+  opacity: 1;
+}
+.open--block {
+  display: block;
+  max-height: 100vh;
+  overflow: hidden;
+  opacity: 1;
 }
