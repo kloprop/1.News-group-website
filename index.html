@@ -22,24 +22,9 @@
 </head>
 
 <body>
-
-    <form class="feeback window " action="https://formspree.io/f/xyyvzgpk" method="post">
-        <header>
-            <h1>
-                歡迎提供意見或建議其他新聞網
-            </h1>
-            <p class="close">&times;</p>
-        </header>
-        <textarea class="feeback__textarea" cols="30" rows="10" name="feeback"></textarea>
-        <div class="block--btn">
-            <p class="btn btn--primary btn--right reset">重新輸入</p>
-            <button class="btn btn--sharp ">送出</button>
-        </div>
-    </form>
-
     <div class="website">
         <header>
-            <nav class="nav collapsible ">
+            <nav class="nav  ">
                 <div class="nav__logo">
                     <svg class="icon" id="icon__website">
                         <use xlink:href="Images/sprite.svg#rabbit">
@@ -51,18 +36,20 @@
                         <use xlink:href="Images/sprite.svg#arrow--right">
                         </use>
                     </svg></p>
-                <div class="icon__container nav__toggler">
-                    <svg class=" collapsible nav__menu">
+
+                <div class=" collapsible icon__container nav__toggler">
+                    <svg class="  nav__menu">
                         <use xlink:href="Images/sprite.svg#menu">
                         </use>
                     </svg>
                 </div>
-                <ul class="list nav__list collapsible__content ">
+                <ul class=" collapsible list nav__list collapsible__content ">
                     <li class="nav__item new__trigger">最新消息</li>
                     <li class="nav__item"><a href="#">主頁</a></li>
                     <li class="nav__item suggestion">意見收集</li>
                     <li class="nav__item"><a href="#">設定</a></li>
                 </ul>
+
             </nav>
             <div class="new__div">
                 <p>暫無消息</p>
@@ -334,6 +321,21 @@
                 </div>
             </div>
         </section>
+        <div class="blur">
+            <form class="feeback" action="https://formspree.io/f/xyyvzgpk" method="post">
+                <header>
+                    <h1>
+                        歡迎提供意見或建議其他新聞網
+                    </h1>
+                    <p class="close">&times;</p>
+                </header>
+                <textarea class="feeback__textarea" cols="30" rows="10" name="feeback"></textarea>
+                <div class="block--btn">
+                    <p class="btn btn--primary btn--right reset">重新輸入</p>
+                    <button class="btn btn--sharp ">送出</button>
+                </div>
+            </form>
+        </div>
     </div>
 
 
