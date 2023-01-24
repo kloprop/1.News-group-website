@@ -17,7 +17,6 @@ nav.addEventListener("click", (e) => {
     feeback.classList.toggle("open");
   }
   if (target.classList.contains("new__trigger")) {
-    console.log(target);
     new__div.classList.toggle("open--block");
   }
 });
